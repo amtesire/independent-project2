@@ -1,0 +1,108 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  background-image: url('pizza/download\ \(3\).jpeg');
+   background-size: 1000px;
+   height:570px;
+   width:100%
+  background-repeat : no-repeat;
+  background-position: center;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+header{
+ text-transform: uppercase;
+ color: white;
+  text-align:center;
+}
+.logo{
+  height:120px;
+  width: auto;
+  float: left;
+  /* margin-top:5px; */
+/* }
+.main{
+    margin: 0 auto;
+    padding: 10px 0; 
+    margin-right: 0%;
+    list-style: none;
+}
+.main li{
+  display: inline-block;
+  list-style: none;
+  margin-left: 50px;
+}
+.main li a{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  
+}
+.main li a:hover{
+/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6); */
+  /* background: transparent;
+  cursor: pointer;
+  color: rgba(0, 35, 122, 0.7);
+  list-style: none;
+  border-bottom:3px solid rgb(40, 255, 237);
+  }
+ h1{
+   font-size: 30px;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: bold;
+   word-spacing:5px;
+   margin-bottom: 20px;
+ }
+ .cover p{
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+.btn{
+ 
+  background-color:transparent;
+  color:rgb(17, 5, 48);
+  margin-right:400px;
+  border:2px solid rgb(247, 0, 255);
+  border-radius: 150px;
+  
+}
+.btn:hover{
+  background-color: rgb(19, 104, 16);
+} 
+ .btn {
+  
+  position: relative;
+  -webkit-animation-name: example; 
+  -webkit-animation-duration: 3s;   
+  -webkit-animation-delay: 2s; 
+  -webkit-animation-fill-mode: both; 
+  animation-name: example;
+  animation-duration: 3s;  
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+
+
+@-webkit-keyframes example {
+  from {left: 0px; background-color: rgb(44, 158, 161);}
+  to {left: 200px; background-color: blue;}
+}
+
+@keyframes example {
+  from {left: 0px; background-color: rgb(0, 255, 234);}
+  to {left: 200px; background-color: blue;}
+} */ 
+/* @media only screen and (max-width:1180px){
+  .cover{
+    width: 100%;
+    /* padding: 0 2%; */
+  /* }
+} */
+/* @media only screen and (max-width:768px){
+h1{font-size: 180%;}
+.main{display: none;}
+.icon{display: inline-block;}
+} */ */ */

@@ -1,18 +1,23 @@
-{
+*{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
-.container{
-  background-image: url('pizza/download\ \(3\).jpeg');
-   background-size: 1000px;
-   height:570px;
-   width:100%
-  background-repeat : no-repeat;
+ .container{
+  background-image: url("pizza/45172dff4e8a000f30842245bff85e25.jpg"); */
+   background-size: cover;
+   height:600px;
+   width:100%;
+   background-repeat : no-repeat;
   background-position: center;
-box-sizing: border-box;
-font-family: Arial, Helvetica, sans-serif;
-}
+  
+ }
+   /* 
+  background-repeat : no-repeat;
+  background-position: top; */ */
+/* box-sizing: border-box; */
+/* font-family: Arial, Helvetica, sans-serif;
+} */ */
 header{
  text-transform: uppercase;
  color: white;
@@ -51,14 +56,17 @@ header{
   border-bottom:3px solid rgb(40, 255, 237);
   }
  h1{
-   font-size: 30px;
+   font-size: 50px;
    font-family: 'Times New Roman', Times, serif;
-   font-weight: bold;
+   font-weight: bolder;
    word-spacing:5px;
    margin-bottom: 20px;
+   color:white;
  } 
  .cover p{
-  font-size: 15px;
+  font-weight: bolder;
+  font-size: 25px;
+  color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  }
 .btn{
@@ -95,15 +103,4 @@ header{
 @keyframes example {
   from {left: 0px; background-color: rgb(0, 255, 234);}
   to {left: 200px; background-color: blue;}
-} */ 
-/* @media only screen and (max-width:1180px){
-  .cover{
-    width: 100%;
-    /* padding: 0 2%; */
-  /* }
-} */
-/* @media only screen and (max-width:768px){
-h1{font-size: 180%;}
-.main{display: none;}
-.icon{display: inline-block;}
-} */ */ */
+}

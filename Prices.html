@@ -21,17 +21,48 @@
                                 </ul>
 
                     </nav>
+                    <h2>Checkout Form</h2>
                 </header>
-                h2>Responsive Checkout Form</h2>
-                <p>Resize the browser window to see the effect. When the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other.</p>
-                <div class="row">
+                <form>
+                        <label for="size">choose Pizza size:</label>
+                        <select id="size" name="size">
+                          <option value="small">Small</option>
+                          <option value="medium">Medium</option>
+                          <option value="large">Large</option>
+                        </select>
+                        <label for="size">choose Pizza crust:</label>
+                        <select id="size" name="size">
+                          <option value="small">Flatbread crust</option>
+                          <option value="medium">Thin crust</option>
+                          <option value="large">Thick crust</option>
+                          <option value="large">Focaccia</option>
+                          <option value="large">Authentic Wood Fired Crusts</option>
+                          <option value="large">Custom Crusts</option>
+                        </select>
+                        <label for="size">choose Pizza toppings:</label>
+                        <select id="size" name="size">
+                          <option value="small">pepperoni</option>
+                          <option value="medium">Mushrooms</option>
+                          <option value="large">Onions</option>
+                          <option value="large">Sausage</option>
+                          <option value="large">Bacon</option>
+                          <option value="large">Extra cheese</option>
+                          <option value="large">Black olives</option>
+                          <option value="large">Green peppers</option>
+                        </select>
+                        <label for="size">choose number of pizzas:</label>
+                        <input type="number" class="form-control" id="first" min="1">
+                        <input type="submit" value="Place an order" class="btn1">
+                </form>
+                <!-- <div class="row">
                   <div class="col-75">
                     <div class="container">
                       <form action="/action_page.php">
-                      
-                        <div class="row">
+                      required=""
+                        <div class="row"> placeholder="Number of pizzas" 
                           <div class="col-50">
-                            <h3>Billing Address</h3>
+                                 -->
+                            <!-- <h3>Billing Address</h3>
                             <label for="fname"><i class="fa fa-user"></i> Full Name</label>
                             <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
                             <label for="email"><i class="fa fa-envelope"></i> Email</label>
@@ -84,7 +115,7 @@
                         <!-- <label>
                           <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
                         </label> -->
-                        <input type="submit" value="Place an order" class="btn">
+                        <!-- <input type="submit" value="Place an order" class="btn1">
                       </form>
                     </div>
                   </div>
@@ -99,7 +130,7 @@
                       <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
                     </div>
                   </div>
-                </div>
+                </div> --> 
                 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> 
                 <script src="script.js"></script>
     </div>

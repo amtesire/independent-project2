@@ -3,7 +3,7 @@
   padding: 0;
   /* box-sizing: border-box; */
 }
- .container{
+ .container-fluid{
   background-image: url("pizza/45172dff4e8a000f30842245bff85e25.jpg"); */
    background-size: cover;
    height:600px;

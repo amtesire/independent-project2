@@ -154,3 +154,23 @@ $(document).ready(function(){
    '</div>' );
   });
 });
+function checkOut(first, second, third, last) {
+    this.size= first;
+    this.crust = second;
+    this.toppings = third;
+    this.quantity = last;
+ }
+ checkOut.prototype.fullOrder=function(){
+   return this.size + "" + this.crust + "" + this.toppings + "" + this.quantity }
+ $(document).ready(function(){
+   $("form#checkOut").submit(function(event){
+     event.preventDefault();
+     var selectedSize = $("select#size").val();
+     var selectedCrust = $("select#size1").val();
+     var selectedToppings = $("select#size2").val();
+     var inputtedQuantity = $("input#size3").val();
+     var newOrder= new checkOut(selectedSize, selectedCrust, selectedToppings, inputtedQuantity);
+     console.log(newOrder);
+   })
+ })
+  

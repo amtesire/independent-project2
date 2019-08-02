@@ -103,3 +103,16 @@ $(document).ready(function(){
       $(".wor7").fadeOut();
     });
   });
+  // business logic
+// function checkOut(first, second, third, last) {
+//   this.size= first;
+//   this.crust = second;
+//   this.toppings = third;
+//   this.quantity = last;
+// }
+// Contact.prototype.fullInfo = function() {
+//   return this.first + " " + this.lastName;
+// }
+
+// user interface logic
+// 

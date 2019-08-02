@@ -17,21 +17,24 @@
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="Menu.html">Menu</a></li>
                                     <li><a href="Prices.html">Order</a>></li>
-                                    <li><a href="contact.html">contact</a></li>
                                 </ul>
 
                     </nav>
                     <h2>Checkout Form</h2>
                 </header>
-                <form>
+                <form id="CheckOut">
+                  <div id="checked">
+                    <div class="checked">
                         <label for="size">choose Pizza size:</label>
+                        
                         <select id="size" name="size">
                           <option value="small">Small</option>
                           <option value="medium">Medium</option>
                           <option value="large">Large</option>
                         </select>
+                        <br>
                         <label for="size">choose Pizza crust:</label>
-                        <select id="size" name="size">
+                        <select id="size1" name="size">
                           <option value="small">Flatbread crust</option>
                           <option value="medium">Thin crust</option>
                           <option value="large">Thick crust</option>
@@ -39,8 +42,9 @@
                           <option value="large">Authentic Wood Fired Crusts</option>
                           <option value="large">Custom Crusts</option>
                         </select>
+                        <br>
                         <label for="size">choose Pizza toppings:</label>
-                        <select id="size" name="size">
+                        <select id="size2" name="size">
                           <option value="small">pepperoni</option>
                           <option value="medium">Mushrooms</option>
                           <option value="large">Onions</option>
@@ -50,10 +54,18 @@
                           <option value="large">Black olives</option>
                           <option value="large">Green peppers</option>
                         </select>
+                        <br>
                         <label for="size">choose number of pizzas:</label>
-                        <input type="number" class="form-control" id="first" min="1">
-                        <input type="submit" value="Place an order" class="btn1">
+                        <input type="number" class="form-control" id="size3" min="1" placeholder="Quantity e.g:5">
+                       </div>
+                      </div> 
+                       <span class="btn btn-primary" id="addOrder">Another order</span>
+                       <input type="submit" value="Place an order" class="btn">
                 </form>
+                <h2>Bill payment:</h2>
+          <ul id="payment">
+
+          </ul>
                 <!-- <div class="row">
                   <div class="col-75">
                     <div class="container">

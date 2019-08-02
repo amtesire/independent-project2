@@ -273,3 +273,15 @@ height: 90%;
   .btn:hover {
     background-color: #45a049;
   }
+  .checked{
+    margin-left: 50px;
+  }
+  #size{
+    margin-left: 120px;
+  }
+  #size1{
+    margin-left: 100px;
+  }
+  #size2{
+    margin-left: 40px;
+  }

@@ -4,7 +4,7 @@
   /* box-sizing: border-box; */
 }
  .container-fluid{
-  background-image: url("pizza/45172dff4e8a000f30842245bff85e25.jpg"); */
+  background-image: url("pizza/45172dff4e8a000f30842245bff85e25.jpg"); 
    background-size: cover;
    height:600px;
    width:100%;
@@ -13,8 +13,10 @@
   
  }
  .container{
-   background-image: url('https://www.google.com/imgres?imgurl=http%3A%2F%2Fpavbca.com%2Fwalldb%2Foriginal%2Fb%2F6%2F6%2F257938.jpg&imgrefurl=http%3A%2F%2Fpavbca.com%2Fwalls%2Fwood-hd-wallpapers&docid=ti4QL-wtB6xMgM&tbnid=-uOTMxEhO3xCjM%3A&vet=10ahUKEwjm253eiuTjAhVEyoUKHUScC9QQMwjHAShIMEg..i&w=1920&h=1200&bih=590&biw=1213&q=wooden%20background%20hd%20images&ved=0ahUKEwjm253eiuTjAhVEyoUKHUScC9QQMwjHAShIMEg&iact=mrc&uact=8');
- }
+   background-image: url("pizza/cover1.jpeg");
+   background-size: cover;
+   background-repeat : no-repeat;
+  }
    /* 
   background-repeat : no-repeat;
   background-position: top; */ */

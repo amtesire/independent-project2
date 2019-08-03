@@ -103,74 +103,138 @@ $(document).ready(function(){
       $(".wor7").fadeOut();
     });
   });
-  // business logic
-// function checkOut(first, second, third, last) {
-//   this.size= first;
-//   this.crust = second;
-//   this.toppings = third;
-//   this.quantity = last;
-// }
-// Contact.prototype.fullInfo = function() {
-//   return this.first + " " + this.lastName;
-// }
 
-// user interface logic
-// 
-$(document).ready(function(){
-  $("#addOrder").click(function(){
-    $("#checked").append('<div class="checked">' +
-    '<label for="size">choose Pizza size:</label>' +
+// $(document).ready(function(){
+//   $("#addOrder").click(function(){
+//     $("#checked").append('<div class="checked">' +
+//     '<label for="size">choose Pizza size:</label>' +
     
-    '<select id="size" name="size">' +
-      '<option value="small">Small</option>' +
-      '<option value="medium">Medium</option>' +
-      '<option value="large">Large</option>' +
-    '</select>' +
-    '<br>' +
-    '<label for="size">choose Pizza crust:</label>' +
-    '<select id="size1" name="size">' +
-      '<option value="small">Flatbread crust</option>' +
-      '<option value="medium">Thin crust</option>' +
-      '<option value="large">Thick crust</option>' +
-      '<option value="large">Focaccia</option>' +
-      '<option value="large">Authentic Wood Fired Crusts</option>' +
-      '<option value="large">Custom Crusts</option>' +
-    '</select>' +
-    '<br>' +
-    '<label for="size">choose Pizza toppings:</label>' +
-    '<select id="size2" name="size">' +
-      '<option value="small">pepperoni</option>' +
-      '<option value="medium">Mushrooms</option>' +
-      '<option value="large">Onions</option>' +
-      '<option value="large">Sausage</option>' +
-      '<option value="large">Bacon</option>' +
-      '<option value="large">Extra cheese</option>' +
-      '<option value="large">Black olives</option>' +
-      '<option value="large">Green peppers</option>' +
-    '</select>' +
-    '<br>' +
-    '<label for="size">choose number of pizzas:</label>' +
-    '<input type="number" class="form-control" id="size3" min="1" placeholder="Quantity e.g:5">' +
-   '</div>' );
+//     '<select id="size" name="size">' +
+//       '<option value="small">Small</option>' +
+//       '<option value="medium">Medium</option>' +
+//       '<option value="large">Large</option>' +
+//     '</select>' +
+//     '<br>' +
+//     '<label for="size">choose Pizza crust:</label>' +
+//     '<select id="size1" name="size">' +
+//       '<option value="small">Flatbread crust</option>' +
+//       '<option value="medium">Thin crust</option>' +
+//       '<option value="large">Thick crust</option>' +
+//       '<option value="large">Focaccia</option>' +
+//       '<option value="large">Authentic Wood Fired Crusts</option>' +
+//       '<option value="large">Custom Crusts</option>' +
+//     '</select>' +
+//     '<br>' +
+//     '<label for="size">choose Pizza toppings:</label>' +
+//     '<select id="size2" name="size">' +
+//       '<option value="small">pepperoni</option>' +
+//       '<option value="medium">Mushrooms</option>' +
+//       '<option value="large">Onions</option>' +
+//       '<option value="large">Sausage</option>' +
+//       '<option value="large">Bacon</option>' +
+//       '<option value="large">Extra cheese</option>' +
+//       '<option value="large">Black olives</option>' +
+//       '<option value="large">Green peppers</option>' +
+//     '</select>' +
+//     '<br>' +
+//     '<label for="size">choose number of pizzas:</label>' +
+//     '<input type="number" class="form-control" id="size3" min="1" placeholder="Quantity e.g:5">' +
+//    '</div>' );
+//   });
+// });
+function Pizza(size, crust, topping, quantity){
+  this.size = size;
+  this.crust = crust;
+  this.topping = topping;
+  this.quantity = quantity;
+}
+Pizza.prototype.fullOrder = function() {
+  return this.size + " " + this.crust + " " +this.topping + " " + this.quantity;
+}
+$(document).ready(function(){
+  $("form#checked").submit(function(event){
+    event.preventDefault();
+    var sizing = $("select#size").val();
+    var crusts = $("select#size1").val();
+    var topping1 = $("select#size2").val();
+    var number = $("input#size3").val();
+    
+    var newpizza = new Pizza(sizing, crusts, topping1, number);
+    console.log(newPizza);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    var price
   });
 });
-function checkOut(first, second, third, last) {
-    this.size= first;
-    this.crust = second;
-    this.toppings = third;
-    this.quantity = last;
- }
- checkOut.prototype.fullOrder=function(){
-   return this.size + "" + this.crust + "" + this.toppings + "" + this.quantity }
- $(document).ready(function(){
-   $("form#checkOut").submit(function(event){
-     event.preventDefault();
-     var selectedSize = $("select#size").val();
-     var selectedCrust = $("select#size1").val();
-     var selectedToppings = $("select#size2").val();
-     var inputtedQuantity = $("input#size3").val();
-     var newOrder= new checkOut(selectedSize, selectedCrust, selectedToppings, inputtedQuantity);
-     console.log(newOrder);
-   })
- })
-  

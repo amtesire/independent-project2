@@ -22,62 +22,71 @@
                     </nav>
                     <h2>Checkout Form</h2>
                 </header>
+                
                 <div class="row">
                   <div class="col-md-12">
-                <form id="CheckOut">
+                <form id="Checkout">
                   <div id="checked">
                     <div class="checked">
-                        <label for="size">choose Pizza size:</label>
-                        
-                        <select id="size" name="size">
+                      <div class="form-group">
+                        <label for="size">choose Pizza size:</label> 
+                        <select id="size" name="size" class="form-control">
                           <option value="small">Small</option>
                           <option value="medium">Medium</option>
                           <option value="large">Large</option>
                         </select>
+                      </div>
                         <br>
-                        <label for="size">choose Pizza crust:</label>
-                        <select id="size1" name="size">
-                          <option value="small">Flatbread crust</option>
-                          <option value="medium">Thin crust</option>
-                          <option value="large">Thick crust</option>
-                          <option value="large">Focaccia</option>
-                          <option value="large">Authentic Wood Fired Crusts</option>
-                          <option value="large">Custom Crusts</option>
+                        <div class="form-group">
+                        <label for="size1">choose Pizza crust:</label>
+
+                        <select id="size1" name="size" class="form-control">
+                          <option value="flat">Flatbread crust</option>
+                          <option value="thin">Thin crust</option>
+                          <option value="thick">Thick crust</option>
+                          <option value="focaccio">Focaccia</option>
+                          <option value="wood">Authentic Wood Fired Crusts</option>
+                          <option value="custom">Custom Crusts</option>
                         </select>
+                        </div>
                         <br>
-                        <label for="size">choose Pizza toppings:</label>
-                        <select id="size2" name="size">
-                          <option value="small">pepperoni</option>
-                          <option value="medium">Mushrooms</option>
-                          <option value="large">Onions</option>
-                          <option value="large">Sausage</option>
-                          <option value="large">Bacon</option>
-                          <option value="large">Extra cheese</option>
-                          <option value="large">Black olives</option>
-                          <option value="large">Green peppers</option>
+                        <div class="form-group">
+                        <label for="size2">choose Pizza toppings:</label>
+                        <select id="size2" name="size" class="form-control">
+                          <option value="peppers">pepperoni</option>
+                          <option value="mushroom">Mushrooms</option>
+                          <option value="onion">Onions</option>
+                          <option value="sausage">Sausage</option>
+                          <option value="bacon">Bacon</option>
+                          <option value="extra">Extra cheese</option>
+                          <option value="black">Black olives</option>
+                          <option value="green">Green peppers</option>
                         </select>
+                        </div>
                         <br>
-                        <label for="size">choose number of pizzas:</label>
+                        <label for="size3">choose number of pizzas:</label>
                         <input type="number" class="form-control" id="size3" min="1" placeholder="Quantity e.g:5">
-                       </div>
-                      </div> 
+                       
                        <span class="btn btn-primary" id="addOrder">Another order</span>
-                       <input type="submit" value="Place an order" class="btn">
+                       <button type="submit" value="submit" class="btn" >place an order</button>
+                      </div>
+                    </div>
                 </form>
               
-                <h2>Bill payment:</h2>
+        <h2>Bill payment:</h2>
           <ul id="payment">
-
+   
           </ul>
         </div>
                 </div>
                 <div class="col-md-6">
                   <div id="show-order">
                     <h2>Receipt</h2>
-                    <p class="qua">size of Pizza:</p>
-                    <p class="quant">crust of Pizza:</p>
-                    <p class="quantit">Toppings of pizza:</p>
-                    <p class="quantity">Number of Pizza:</p>
+                    <p>size of Pizza: <span class="qua"></span></p>
+                    <p>crust of Pizza: <span class="quant"></span></p>
+                    <p>Toppings of pizza: <span class="quantit"></span></p>
+                    <p>Number of Pizza: <span class="quantity"></span></p>
+                    <ul id="ordering"></ul>
                   </div>
                 </div>
                 <!-- <div class="row">

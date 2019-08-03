@@ -279,11 +279,18 @@ height: 90%;
     margin-left: 50px;
   }
   #size{
-    margin-left: 120px;
+    margin-left: 10px;
   }
   #size1{
-    margin-left: 100px;
+    margin-left: 1px;
   }
   #size2{
-    margin-left: 40px;
+    margin-left: 10px;
   }
+  /* #show-order{
+    display: none;
+  } */
+  /* .payee{
+    cursor: pointer;
+    color: grey;
+  } */

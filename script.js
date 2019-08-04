@@ -163,7 +163,7 @@ $(document).ready(function(){
     console.log(newpizza);
 
     $(".btn").last().click(function(){
-      $("#payment").show();
+      $("#show-order").show();
       $("#payment h2").text(newpizza.size);
       $(".size").text(newpizza.size);
       $(".crust").text(newpizza.crust);

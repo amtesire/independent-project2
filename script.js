@@ -1,108 +1,116 @@
-$(document).ready(function(){
-    $(".wor").hide();
-    $("#work").css({
-     opacity:1
-   });
-    $("#wo").hover(function(){
-      $(this).stop().css({opacity:.4});
-      $(".wor").fadeIn();
-      }, function(){
-        $(this).stop().css({opacity:1})
-      $(".wor").fadeOut();
-    });
-  });
-  $(document).ready(function(){
-    $(".wor1").hide();
-    $("#work1").css({
-     opacity:1
-   });
-    $("#wo1").hover(function(){
-      $(this).stop().css({opacity:.4});
-      $(".wor1").fadeIn();
-      }, function(){
-        $(this).stop().css({opacity:1})
-      $(".wor1").fadeOut();
-    });
-  });
+function Pizza(size, crust, topping, quantity, totalPrice){
+  this.size = size;
+  this.crust = crust;
+  this.topping = topping;
+  this.quantity = quantity;
+  this.totalPrice = totalPrice;
+}
+Pizza.prototype.fullOrder = function() {
+  return this.size + " " + this.crust + " " +this.topping + " " + this.quantity;
+}
+// $(document).ready(function(){
+//     $(".wor").hide();
+//     $("#work").css({
+//      opacity:1
+//    });
+//     $("#wo").hover(function(){
+//       $(this).stop().css({opacity:.4});
+//       $(".wor").fadeIn();
+//       }, function(){
+//         $(this).stop().css({opacity:1})
+//       $(".wor").fadeOut();
+//     });
+//   });
+//   $(document).ready(function(){
+//     $(".wor1").hide();
+//     $("#work1").css({
+//      opacity:1
+//    });
+//     $("#wo1").hover(function(){
+//       $(this).stop().css({opacity:.4});
+//       $(".wor1").fadeIn();
+//       }, function(){
+//         $(this).stop().css({opacity:1})
+//       $(".wor1").fadeOut();
+//     });
   
-  $(document).ready(function(){
-    $(".wor2").hide();
-    $("#work2").css({
-     opacity:1
-   });
-    $("#wo2").hover(function(){
-      $(this).stop().css({opacity:.4});
-      $(".wor2").fadeIn();
-      }, function(){
-        $(this).stop().css({opacity:1})
-      $(".wor2").fadeOut();
-    });
-  });
-  $(document).ready(function(){
-    $(".wor3").hide();
-    $("#work3").css({
-     opacity:1
-   });
-    $("#wo3").hover(function(){
-      $(this).stop().css({opacity:.4});
-      $(".wor3").fadeIn();
-      }, function(){
-        $(this).stop().css({opacity:1})
-      $(".wor3").fadeOut();
-    });
-  });
-  $(document).ready(function(){
-    $(".wor4").hide();
-    $("#work4").css({
-     opacity:1
-   });
-    $("#wo4").hover(function(){
-      $(this).stop().css({opacity:.4});
-      $(".wor4").fadeIn();
-      }, function(){
-        $(this).stop().css({opacity:1})
-      $(".wor4").fadeOut();
-    });
-  });
-  $(document).ready(function(){
-    $(".wor5").hide();
-    $("#work5").css({
-     opacity:1
-   });
-    $("#wo5").hover(function(){
-      $(this).stop().css({opacity:.4});
-      $(".wor5").fadeIn();
-      }, function(){
-        $(this).stop().css({opacity:1})
-      $(".wor5").fadeOut();
-    });
-  });
-  $(document).ready(function(){
-    $(".wor6").hide();
-    $("#work6").css({
-     opacity:1
-   });
-    $("#wo6").hover(function(){
-      $(this).stop().css({opacity:.4});
-      $(".wor6").fadeIn();
-      }, function(){
-        $(this).stop().css({opacity:1})
-      $(".wor6").fadeOut();
-    });
-  });
-  $(document).ready(function(){
-    $(".wor7").hide();
-    $("#work7").css({
-     opacity:1
-   });
-    $("#wo7").hover(function(){
-      $(this).stop().css({opacity:.4});
-      $(".wor7").fadeIn();
-      }, function(){
-        $(this).stop().css({opacity:1})
-      $(".wor7").fadeOut();
-    });
-  });
+//     $(".wor2").hide();
+//     $("#work2").css({
+//      opacity:1
+//    });
+//     $("#wo2").hover(function(){
+//       $(this).stop().css({opacity:.4});
+//       $(".wor2").fadeIn();
+//       }, function(){
+//         $(this).stop().css({opacity:1})
+//       $(".wor2").fadeOut();
+//     });
+//   });
+//   $(document).ready(function(){
+//     $(".wor3").hide();
+//     $("#work3").css({
+//      opacity:1
+//    });
+//     $("#wo3").hover(function(){
+//       $(this).stop().css({opacity:.4});
+//       $(".wor3").fadeIn();
+//       }, function(){
+//         $(this).stop().css({opacity:1})
+//       $(".wor3").fadeOut();
+//     });
+//   });
+//   $(document).ready(function(){
+//     $(".wor4").hide();
+//     $("#work4").css({
+//      opacity:1
+//    });
+//     $("#wo4").hover(function(){
+//       $(this).stop().css({opacity:.4});
+//       $(".wor4").fadeIn();
+//       }, function(){
+//         $(this).stop().css({opacity:1})
+//       $(".wor4").fadeOut();
+//     });
+//   });
+//   $(document).ready(function(){
+//     $(".wor5").hide();
+//     $("#work5").css({
+//      opacity:1
+//    });
+//     $("#wo5").hover(function(){
+//       $(this).stop().css({opacity:.4});
+//       $(".wor5").fadeIn();
+//       }, function(){
+//         $(this).stop().css({opacity:1})
+//       $(".wor5").fadeOut();
+//     });
+//   });
+//   $(document).ready(function(){
+//     $(".wor6").hide();
+//     $("#work6").css({
+//      opacity:1
+//    });
+//     $("#wo6").hover(function(){
+//       $(this).stop().css({opacity:.4});
+//       $(".wor6").fadeIn();
+//       }, function(){
+//         $(this).stop().css({opacity:1})
+//       $(".wor6").fadeOut();
+//     });
+//   });
+//   $(document).ready(function(){
+//     $(".wor7").hide();
+//     $("#work7").css({
+//      opacity:1
+//    });
+//     $("#wo7").hover(function(){
+//       $(this).stop().css({opacity:.4});
+//       $(".wor7").fadeIn();
+//       }, function(){
+//         $(this).stop().css({opacity:1})
+//       $(".wor7").fadeOut();
+//     });
+//   });
 
 // $(document).ready(function(){
 //   $("#addOrder").click(function(){
@@ -142,15 +150,7 @@ $(document).ready(function(){
 //    '</div>' );
 //   });
 // });
-function Pizza(size, crust, topping, quantity){
-  this.size = size;
-  this.crust = crust;
-  this.topping = topping;
-  this.quantity = quantity;
-}
-Pizza.prototype.fullOrder = function() {
-  return this.size + " " + this.crust + " " +this.topping + " " + this.quantity;
-}
+
 $(document).ready(function(){
   $("form#checked").submit(function(event){
     event.preventDefault();
@@ -160,81 +160,175 @@ $(document).ready(function(){
     var number = $("input#size3").val();
     
     var newpizza = new Pizza(sizing, crusts, topping1, number);
-    console.log(newPizza);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    var price
+    console.log(newpizza);
+
+    $(".btn").last().click(function(){
+      $("#payment").show();
+      $("#payment h2").text(newpizza.size);
+      $(".size").text(newpizza.size);
+      $(".crust").text(newpizza.crust);
+      $(".topping").text(newpizza.topping);
+      $(".quantity").text(newpizza.quantity);
+      $(".totalPrice").text(newpizza.totalPrice);
+      $("ul#ordering").text(" ");
+    });
   });
+
+  $(".btn").click(function(){
+    var sizingb = $("select#size").val();
+    var crustsc = $("select#size1").val();
+    var toppingd = $("select#size2").val();
+    var numberf = $("input#size3").val();
+
+    var price, totalPrice;
+    switch(sizingb){
+      case size = "small":
+      price = "2500";
+    if(crustsc = "thin") {
+      totalPrice = (price*numberf) + 150;
+    }
+    else if (crustsc = "thick"){
+      totalPrice = (price+ 250) ;
+    }
+    else if (crustsc = "flatbread"){
+      totalPrice = (price + 250);
+    }
+    else if (crustsc = "custom crusts"){
+      totalPrice = (price + 250);
+    }
+    else if (crustsc = "Authentic Wood Fired Crusts"){
+      totalPrice = (price + 250);
+    }
+    else if (crustsc = "focaccia"){
+      totalPrice = (price + 250);
+    }
+    break;
+    
+    case size = "medium":
+    price ="5500";
+    if(crustsc = "thin") {
+      totalPrice = (price + 150);
+    }
+    else if (crustsc = "thick"){
+      totalPrice = (price*numberf + 250);
+    }
+    else if (crustsc = "flatbread"){
+      totalPrice = (price + 250);
+    }
+    else if (crustsc = "custom crusts"){
+      totalPrice = (price + 250);
+    }
+    else if (crustsc = "Authentic Wood Fired Crusts"){
+      totalPrice = (price + 250);
+    }
+    else if (crustsc = "focaccia"){
+      totalPrice = (price + 250);
+    }
+    break;
+
+    case sizingb = "large":
+    price = "7000";
+    if(crustsc = "thin") {
+      totalPrice = (price + 150);
+    }
+    else if (crustsc = "thick"){
+      totalPrice = (price + 250);
+    }
+    else if (crustsc = "flatbread"){
+      totalPrice = (price + 250);
+    }
+    else if (crustsc = "custom crusts"){
+      totalPrice = (price + 250);
+    }
+    else if (crustsc = "Authentic Wood Fired Crusts"){
+      totalPrice = (price + 250);
+    }
+    else if (crustsc = "focaccia"){
+      totalPrice = (price*numberf + 250);
+    }
+    break;
+  }
+  switch (toppingd) {
+    case toppingd = "pepperoni":
+  price = "1000";
+  if(toppingd = "pepperoni")
+    break;
+    case toppingd = "pepperoni":
+    totalPrice = price + 1000;
+    break;
+  }
+  console.log(totalPrice);
+  });
+  $("select#size").val("");
+  $("select#size1").val("");
+  $("select#size2").val("");
+  $("input#size3").val("");
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

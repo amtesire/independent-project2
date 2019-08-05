@@ -1,12 +1,16 @@
-function Pizza(size, crust, topping, quantity, totalPrice){
+// document.getElementById("delivery").addEventListener("click", function () {
+//   prompt("enter your location");
+//   alert("thank you ");
+// })
+function Pizza(size, crust, topping, quantity, totalprice){
   this.size = size;
   this.crust = crust;
   this.topping = topping;
   this.quantity = quantity;
-  this.totalPrice = totalPrice;
+  this.totalprice = totalprice;
 }
 Pizza.prototype.fullOrder = function() {
-  return this.size + " " + this.crust + " " +this.topping + " " + this.quantity;
+  return this.size + " " + this.crust + " " +this.topping + " " + this.quantity + " " + this.totalprice;
 }
 // $(document).ready(function(){
 //     $(".wor").hide();
@@ -164,100 +168,92 @@ $(document).ready(function(){
 
     $(".btn").last().click(function(){
       $("#show-order").show();
-      $("#payment h2").text(newpizza.size);
+      $("#show-order h2").text(newpizza.size);
       $(".size").text(newpizza.size);
       $(".crust").text(newpizza.crust);
       $(".topping").text(newpizza.topping);
       $(".quantity").text(newpizza.quantity);
-      $(".totalPrice").text(newpizza.totalPrice);
+      $(".totalprice").text(newpizza.totalprice);
       $("ul#ordering").text(" ");
     });
   });
 
   $(".btn").click(function(){
     var sizingb = $("select#size").val();
-    var crustsc = $("select#size1").val();
+    var crusts = $("select#size1").val();
     var toppingd = $("select#size2").val();
     var numberf = $("input#size3").val();
 
-    var price, totalPrice;
+    var price, totalprice;
     switch(sizingb){
       case size = "small":
       price = "2500";
-    if(crustsc = "thin") {
-      totalPrice = (price*numberf) + 150;
+    if(crusts = "thin") {
+      totalprice = (price*numberf) + 150;
     }
-    else if (crustsc = "thick"){
-      totalPrice = (price+ 250) ;
+    else if (crusts = "thick"){
+      totalprice = (price*numberf)+ 250;
     }
-    else if (crustsc = "flatbread"){
-      totalPrice = (price + 250);
+    else if (crusts = "flatbread"){
+      totalprice = (price*numberf) + 250;
     }
-    else if (crustsc = "custom crusts"){
-      totalPrice = (price + 250);
+    else if (crusts = "custom crusts"){
+      totalprice = (price*numberf) + 250;
     }
-    else if (crustsc = "Authentic Wood Fired Crusts"){
-      totalPrice = (price + 250);
+    else if (crusts = "Authentic Wood Fired Crusts"){
+      totalprice = (price*numberf) + 250;
     }
-    else if (crustsc = "focaccia"){
-      totalPrice = (price + 250);
+    else if (crusts = "focaccia"){
+      totalprice = (price*numberf) + 250;
     }
     break;
     
     case size = "medium":
     price ="5500";
-    if(crustsc = "thin") {
-      totalPrice = (price + 150);
+    if(crusts = "thin") {
+      totalprice = (price*numberf) + 150;
     }
-    else if (crustsc = "thick"){
-      totalPrice = (price*numberf + 250);
+    else if (crusts = "thick"){
+      totalprice = (price*numberf) + 250;
     }
-    else if (crustsc = "flatbread"){
-      totalPrice = (price + 250);
+    else if (crusts = "flatbread"){
+      totalprice = (price*numberf) + 250;
     }
-    else if (crustsc = "custom crusts"){
-      totalPrice = (price + 250);
+    else if (crusts = "custom crusts"){
+      totalprice = (price*numberf) + 250;
     }
-    else if (crustsc = "Authentic Wood Fired Crusts"){
-      totalPrice = (price + 250);
+    else if (crusts = "Authentic Wood Fired Crusts"){
+      totalprice = (price*numberf) + 250;
     }
-    else if (crustsc = "focaccia"){
-      totalPrice = (price + 250);
+    else if (crusts = "focaccia"){
+      totalprice = (price*numberf) + 250;
     }
     break;
 
     case sizingb = "large":
     price = "7000";
-    if(crustsc = "thin") {
-      totalPrice = (price + 150);
+    if(crusts = "thin") {
+      totalprice = (price*numberf) + 150;
     }
-    else if (crustsc = "thick"){
-      totalPrice = (price + 250);
+    else if (crusts = "thick"){
+      totalprice = (price*numberf) + 250;
     }
-    else if (crustsc = "flatbread"){
-      totalPrice = (price + 250);
+    else if (crusts = "flatbread"){
+      totalprice = (price*numberf) + 250;
     }
-    else if (crustsc = "custom crusts"){
-      totalPrice = (price + 250);
+    else if (crusts = "custom crusts"){
+      totalprice = (price*numberf) + 250;
     }
-    else if (crustsc = "Authentic Wood Fired Crusts"){
-      totalPrice = (price + 250);
+    else if (crusts = "Authentic Wood Fired Crusts"){
+      totalprice = (price*numberf) + 250;
     }
-    else if (crustsc = "focaccia"){
-      totalPrice = (price*numberf + 250);
+    else if (crusts = "focaccia"){
+      totalprice = (price*numberf) + 250;
     }
     break;
   }
-  switch (toppingd) {
-    case toppingd = "pepperoni":
-  price = "1000";
-  if(toppingd = "pepperoni")
-    break;
-    case toppingd = "pepperoni":
-    totalPrice = price + 1000;
-    break;
-  }
-  console.log(totalPrice);
+  
+  console.log(totalprice);
   });
   $("select#size").val("");
   $("select#size1").val("");
@@ -265,6 +261,8 @@ $(document).ready(function(){
   $("input#size3").val("");
 
 });
+
+
 
 
 

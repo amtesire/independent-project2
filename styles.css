@@ -110,8 +110,7 @@ header{
   to {left: 200px; background-color: blue;}
 }
 #work, #work1, #work2, #work3, #work4, #work5, #work6, #work7{
-  /* position: relative;
-  overflow: hidden; */
+  
   cursor: pointer;
 }
 .wor, .wor1, .wor2, .wor3, .wor4, .wor5, .wor6, .wor7{
@@ -131,112 +130,16 @@ height: 90%;
 }
 .wor > h2, .wor1>h2, .wor2>h2, .wor3>h2, .wor4>h2, .wor5>h2, .wor6>h2, .wor7>h2{
   text-transform: uppercase;
-  /* position: absolute; */
   transform: translate(-50%);
   width: 100%;
   color: black;
   text-align: center;
- 
   font-family: Arial, Helvetica, sans-serif;
-  /* top: 50%;
-  left: 50%; */
   padding: 0;
   margin: 0;
   font-size: 20px;
   }
-  /* body {
-    font-family: Arial;
-    font-size: 17px;
-    padding: 8px;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-   */
- /* .row {
-    display: -ms-flexbox; 
-    display: flex;
-    -ms-flex-wrap: wrap; 
-    flex-wrap: wrap;
-    margin: 0 -16px;
-  }
-  
-  .col-25 {
-    -ms-flex: 25%; 
-    flex: 25%;
-  }
-  
-  .col-50 {
-    -ms-flex: 50%; 
-    flex: 50%;
-  }
-  
-  .col-75 {
-    -ms-flex: 75%; 
-    flex: 75%;
-  }
-  
-  .col-25,
-  .col-50,
-  .col-75 {
-    padding: 0 16px;
-  }
-  
-  /* .container {
-    background-color: #f2f2f2;
-    padding: 5px 20px 15px 20px;
-    border: 1px solid lightgrey;
-    border-radius: 3px;
-  }
-   
-   {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  label {
-    margin-bottom: 10px;
-    display: block;
-  }
-  
-  .icon-container {
-    margin-bottom: 20px;
-    padding: 7px 0;
-    font-size: 24px;
-  }
-  
-  .btn1 {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px;
-    margin: 10px 0;
-    border: none;
-    width: 100%;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 17px;
-  }
-  
-  .btn1:hover {
-    background-color: #45a049;
-  }
-  
-  a {
-    color: #2196F3;
-  }
-  
-  hr {
-    border: 1px solid lightgrey;
-  }
-  
-  span.price {
-    float: right;
-    color: grey;
-  }*/
+
   input[type=text],select {
      width: 40%;
   padding: 12px 10px;
@@ -295,7 +198,4 @@ height: 90%;
     color: white;
     font-size: 30px;
   } 
-  /* .payee{
-    cursor: pointer;
-    color: grey;
-  } */
+  

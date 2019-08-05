@@ -18,7 +18,7 @@ A github account a repository on github account a terminal to push my workings o
 
 
 ## The link to my website gh-pages:
-
+https://evelyne250.github.io/independent-project2/
 
 ## License
 MIT License

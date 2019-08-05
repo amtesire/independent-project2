@@ -287,9 +287,11 @@ height: 90%;
   #size2{
     margin-right: 10px;
   }
-   /* #show-order{
+   #show-order{
     display: none;
-  }  */
+    color: white;
+    font-size: 30px;
+  } 
   /* .payee{
     cursor: pointer;
     color: grey;

@@ -1,7 +1,7 @@
-// document.getElementById("delivery").addEventListener("click", function () {
-//   prompt("enter your location");
-//   alert("thank you, your order will be processed and get back at you");
-// })
+document.getElementById("delivery").addEventListener("click", function () {
+  prompt("enter your location");
+  alert("thank you, your order will be processed and get back at you");
+})
 
 
 function Pizza(size, crust, topping, quantity, totalprice){
@@ -288,16 +288,6 @@ $(document).ready(function(){
   $("input#size3").val("");
 
 });
-
-
-
-
-
-
-
-
-
-
 
 
 
